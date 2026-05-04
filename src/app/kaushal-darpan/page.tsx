@@ -5,17 +5,16 @@ import EnquiryForm from '@/components/EnquiryForm'
 
 export const metadata = {
   title: 'Kaushal Darpan | Darpan Foundation',
-  description:
-    'Vocational training, livelihood, and rural empowerment. Life skills, employability skills, and entrepreneurial skills — woven together.',
+  description: 'Pure Food for Self. Innovative skilling programs for sustainable living.',
 }
 
-const competencies = [
-  'Teamwork',
+const lessons = [
+  'Team work',
   'Communication skills',
   'Self-management',
-  'Sustainable living practices',
-  'Problem-solving ability',
-  'Basic literacy enhancement',
+  'Sustainable living',
+  'Problem-solving capability',
+  'Enhance basic literacy',
   'Digital literacy',
   'Eco-friendly construction techniques',
   'Sustainable agriculture methods',
@@ -25,9 +24,8 @@ export default function KaushalPage() {
   return (
     <>
       <PageHero
-        eyebrow="Kaushal Darpan कौशल"
-        title="Skill that becomes self-sufficiency."
-        subtitle="Innovative skill-development programs that inspire individuals to embrace sustainable living and build eco-friendly systems of livelihood."
+        eyebrow="Kaushal Darpan"
+        title="Pure Food for Self"
         bgImage="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1740&auto=format&fit=crop"
       />
 
@@ -36,68 +34,50 @@ export default function KaushalPage() {
           <FadeIn>
             <Prose size="lg">
               <p>
-                Darpan Ashram designs and facilitates innovative skill-development programs that inspire individuals to embrace sustainable living and build eco-friendly systems of livelihood. The programs deliver hands-on training in sustainable practice — while cultivating a deep sense of personal responsibility for the environment.
+                Darpan Ashram facilitates innovative skilling programs that inspire individuals to adopt sustainable living practices and create eco-friendly ecosystems. These skill development programs offer practical training in sustainable practices while instilling a strong sense of responsibility for the environment.
               </p>
               <p>
-                The impact extends well beyond the participants themselves. Graduates of Kaushal Darpan&apos;s vocational training share what they have learned within their own communities — creating a ripple effect of positive change.
+                By tackling issues like poverty, unemployment and environmental degradation in rural communities, Darpan Ashram&rsquo;s impact goes beyond the participants. Graduates of these vocational trainings share their knowledge, creating a ripple effect of positive change throughout their communities.
               </p>
             </Prose>
           </FadeIn>
         </div>
       </section>
 
-      {/* THREE-IN-ONE */}
       <section className="bg-charcoal text-ivory py-24 md:py-32 border-y border-goldLight/20">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
-          <FadeIn className="text-center mb-12">
+          <FadeIn>
             <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
-              What Makes Kaushal Different
+              The Benefits
             </span>
-            <h2 className="font-display text-3xl md:text-5xl leading-tight">
-              Three skill dimensions, woven together.
+            <h2 className="font-display text-3xl md:text-5xl mb-8 leading-tight">
+              A distinctive skill development program
             </h2>
-          </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { name: 'Life Skills', desc: 'For a stable, balanced inner life.' },
-              { name: 'Employability Skills', desc: 'For finding meaningful work.' },
-              { name: 'Entrepreneurial Skills', desc: 'For creating opportunities yourself.' },
-            ].map((s, i) => (
-              <FadeIn key={i} delay={i * 0.1}>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center">
-                  <div className="text-saffron font-display text-3xl mb-3">{`0${i + 1}`}</div>
-                  <h3 className="font-display text-xl mb-2 text-goldLight">{s.name}</h3>
-                  <p className="text-ivory/80 text-sm">{s.desc}</p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-
-          <FadeIn className="mt-12 text-center max-w-2xl mx-auto">
-            <p className="text-ivory/85 leading-relaxed text-lg italic">
-              Beyond skill acquisition, Kaushal Darpan prioritises building a resilient mindset — one that allows people to thrive in today&apos;s unpredictable job market and to create their own opportunities rather than waiting for them.
-            </p>
+            <Prose size="md" className="text-ivory/85">
+              <p>
+                Kaushal Darpan presents a distinctive skill development program that combines life skills, employability skills and entrepreneurial skills. By equipping trainees with these comprehensive skills, the program enhances their entrepreneurial skills and sets inspiring examples for their surrounding communities, while inspiring and encouraging similar trends to flourish.
+              </p>
+              <p>
+                Beyond vocational training, Kaushal Darpan prioritises cultivating a resilient mindset that empowers individuals to thrive in today&rsquo;s job market and create their own opportunities.
+              </p>
+            </Prose>
           </FadeIn>
         </div>
       </section>
 
-      {/* COMPETENCIES */}
       <section className="py-24 md:py-32 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
-              Core Competencies
-            </span>
             <h2 className="font-display text-3xl md:text-5xl leading-tight">
-              What participants take away.
+              The important lessons that people learn in Kaushal Darpan are:
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-            {competencies.map((c, i) => (
+            {lessons.map((l, i) => (
               <FadeIn key={i} delay={i * 0.04}>
-                <div className="bg-ivory rounded-xl px-5 py-4 border border-charcoal/5 text-charcoal/80 flex items-center gap-3">
-                  <span className="text-saffron text-sm">●</span>
-                  <span className="text-sm">{c}</span>
+                <div className="bg-ivory rounded-xl px-5 py-4 border border-charcoal/5 text-charcoal/85 flex items-center gap-3">
+                  <span className="text-saffron">●</span>
+                  <span className="text-sm">{l}</span>
                 </div>
               </FadeIn>
             ))}
@@ -108,15 +88,12 @@ export default function KaushalPage() {
       <section className="bg-ivory py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl mb-5 leading-tight">
-              I would like to impart skills.
+            <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">
+              I would like to impart skills!!!
             </h2>
-            <p className="text-charcoal/70 text-lg">
-              Or to learn them. Tell us what you&apos;d like to share, or to gain.
-            </p>
           </FadeIn>
           <FadeIn>
-            <EnquiryForm programName="Kaushal Darpan" showProgramField showSkillsField showCityField />
+            <EnquiryForm programName="Kaushal Darpan" showProgramField showSkillsField showCityField buttonLabel="Enquire Now" />
           </FadeIn>
         </div>
       </section>

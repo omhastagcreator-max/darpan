@@ -4,15 +4,30 @@
 
 @layer base {
   body {
-    @apply bg-ivory text-charcoal font-sans antialiased overflow-x-hidden;
+    @apply bg-ivory text-darpanInk font-sans antialiased overflow-x-hidden;
+    font-feature-settings: "ss01", "cv11";
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight text-charcoal;
+    @apply font-display tracking-tight text-darpanNavy;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  h1 { font-weight: 700; letter-spacing: -0.025em; }
+  h2 { font-weight: 600; letter-spacing: -0.02em; }
+
+  p {
+    @apply leading-relaxed;
   }
 
   ::selection {
-    @apply bg-saffron text-ivory;
+    @apply bg-darpanTeal text-ivory;
+  }
+
+  /* Smooth focus state */
+  :focus-visible {
+    @apply outline-none ring-2 ring-darpanTeal ring-offset-2 ring-offset-ivory;
   }
 }
 
@@ -20,9 +35,31 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .glass-card {
-    @apply bg-creamCard/80 backdrop-blur-md border border-white/20 shadow-lg;
+    @apply bg-white/85 backdrop-blur-md border border-darpanNavy/10 shadow-2xl shadow-darpanNavy/10;
+  }
+
+  /* Brand gradient — used in hero strips per the live darpanfoundation.com site */
+  .brand-gradient {
+    background: linear-gradient(135deg, #0E2A47 0%, #194B73 35%, #2A8A99 70%, #2EB5B5 100%);
+  }
+
+  .brand-gradient-soft {
+    background: linear-gradient(180deg, #F2F8FA 0%, #FFFFFF 100%);
+  }
+
+  /* Mandala overlay (optional decorative) */
+  .mandala-bg {
+    background-image:
+      radial-gradient(circle at 5% 50%, rgba(94, 196, 196, 0.15) 0px, transparent 240px),
+      radial-gradient(circle at 95% 50%, rgba(14, 42, 71, 0.1) 0px, transparent 240px);
+  }
+
+  /* Decorative quote mark */
+  .quote-mark::before {
+    content: '“';
+    @apply font-display text-darpanTeal/30 text-7xl absolute -top-4 -left-2 leading-none;
   }
 }
 
@@ -45,4 +82,13 @@ html.lenis, html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* Hide scrollbars on horizontal carousels */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }

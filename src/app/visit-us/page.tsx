@@ -7,40 +7,15 @@ import { ArrowRight } from 'lucide-react'
 export const metadata = {
   title: 'Visit Us | Darpan Foundation',
   description:
-    'Plan your visit to Darpan Ashram in Urigam, Tamil Nadu. Three ways in: explore the ashram, register your visit, or host your group event.',
+    'We invite you to visit us and experience the transformative power of our programs and initiatives.',
 }
-
-const cards = [
-  {
-    href: '/darpan-ashram',
-    eyebrow: 'The Ashram',
-    title: 'A day at Darpan Ashram',
-    desc: 'Daily schedule, facilities, location, rules. Everything you need to know before you arrive.',
-    img: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=2070&auto=format&fit=crop',
-  },
-  {
-    href: '/register-your-visit',
-    eyebrow: 'Plan Your Stay',
-    title: 'Register your visit',
-    desc: 'Send us your dates and intentions — we will confirm availability and onboard you for your stay.',
-    img: 'https://images.unsplash.com/photo-1547106634-56dcd53ae883?q=80&w=1740&auto=format&fit=crop',
-  },
-  {
-    href: '/host-your-event',
-    eyebrow: 'Bring Your Group',
-    title: 'Host your event',
-    desc: 'Schools, colleges, corporates, residential communities, artists, sustainable-living workshops — the ashram welcomes them all.',
-    img: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1740&auto=format&fit=crop',
-  },
-]
 
 export default function VisitHub() {
   return (
     <>
       <PageHero
         eyebrow="Visit Us"
-        title="Three ways to walk through the gates."
-        subtitle="Nestled in the foothills of Noorundumalai, Darpan Ashram is a sanctuary for spiritual growth, self-discovery and community. Our doors are always open."
+        title="Visit Us"
         bgImage="https://images.unsplash.com/photo-1547106634-56dcd53ae883?q=80&w=2070&auto=format&fit=crop"
       />
 
@@ -49,44 +24,85 @@ export default function VisitHub() {
           <FadeIn>
             <Prose size="lg">
               <p>
-                We invite you to visit us and experience first-hand what the work at Darpan looks like. Whether you are interested in joining a meditation session, volunteering in a community project, or simply walking the grounds in quiet, you are welcome.
+                We invite you to visit us and experience the transformative power of our programs and initiatives. Nestled in a serene environment, our center is a sanctuary for those seeking spiritual growth, self-discovery, and community development.
               </p>
               <p>
-                Plan your visit today — and step toward a more grounded, enlightened life.
+                Whether you are interested in participating in our meditation sessions, volunteering in our community projects, or simply exploring the peaceful surroundings, our doors are always open to you. Join us to witness firsthand the impact of our work and become a part of our mission to foster positive change.
+              </p>
+              <p>
+                Plan your visit today and embark on a journey towards a more fulfilling and enlightened life. We look forward to welcoming you!
               </p>
             </Prose>
+            <div className="mt-10">
+              <Link
+                href="/register-your-visit"
+                className="inline-flex items-center gap-2 bg-saffron text-white rounded-full px-6 py-3 text-sm uppercase tracking-wider font-medium hover:bg-saffron/90 transition-colors"
+              >
+                Register your Visit <ArrowRight size={16} />
+              </Link>
+            </div>
           </FadeIn>
         </div>
       </section>
 
-      <section className="py-12 md:py-20 bg-creamCard">
+      {/* TWO CARDS */}
+      <section className="py-24 md:py-32 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cards.map((c, i) => (
-              <FadeIn key={i} delay={i * 0.08}>
-                <Link
-                  href={c.href}
-                  className="group block bg-ivory rounded-2xl overflow-hidden border border-charcoal/5 hover:shadow-xl transition-all hover:-translate-y-1 h-full"
-                >
-                  <div className="aspect-[4/3] overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                title: 'A day at Ashram',
+                href: '/darpan-ashram',
+                desc:
+                  'Darpan Ashram is a Centre for enlightened seekers of Truth. Designed for self-realization, it is a place open for all earthlings. A unique and inspiring space to experience and feel your Self mirroring in mind and soul mirroring in Self. Looking forward to welcome you!!! Daily and regular practice of meditation is the main activity at the ashram, which forms the basis of the daily schedule. One of the highlights of the ashram daily routine is the one-hour satsang with Guruji. Along with meditation, seva (selfless service) is also an important part of the ashram routine.',
+                cta: 'Register your Visit',
+                ctaHref: '/register-your-visit',
+                img: 'https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=2070&auto=format&fit=crop',
+              },
+              {
+                title: 'Host Your Event',
+                href: '/host-your-event',
+                desc:
+                  'To host your event at Ashram, we can collaborate with you. Event planning is possible for both official and personal celebrations of life. Darpan Ashram is a great place to meet up with loved ones. Ashram provides you with a distinctive atmosphere and experience to make your event unforgettable. Kindly provide us with information about the group and the expected length of the program in writing.',
+                cta: 'Register your Visit',
+                ctaHref: '/host-your-event',
+                img: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1740&auto=format&fit=crop',
+              },
+            ].map((c, i) => (
+              <FadeIn key={i} delay={i * 0.1}>
+                <Link href={c.href} className="group block bg-ivory rounded-2xl overflow-hidden border border-charcoal/5 hover:shadow-xl transition-all hover:-translate-y-1 h-full">
+                  <div className="aspect-[16/10] overflow-hidden">
                     <img src={c.img} alt={c.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   </div>
-                  <div className="p-7">
-                    <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-3 block">
-                      {c.eyebrow}
-                    </span>
-                    <h3 className="font-display text-2xl text-charcoal mb-3 group-hover:text-saffron transition-colors leading-tight">
+                  <div className="p-8">
+                    <h3 className="font-display text-2xl md:text-3xl text-charcoal mb-4 group-hover:text-saffron transition-colors leading-tight">
                       {c.title}
                     </h3>
-                    <p className="text-charcoal/70 text-sm leading-relaxed mb-4">{c.desc}</p>
-                    <span className="text-saffron text-xs uppercase tracking-widest font-medium inline-flex items-center gap-1">
-                      Open <ArrowRight size={12} />
+                    <p className="text-charcoal/70 leading-relaxed mb-6 text-sm">{c.desc}</p>
+                    <span className="inline-flex items-center gap-2 text-saffron uppercase tracking-widest text-xs font-medium">
+                      {c.cta} <ArrowRight size={14} />
                     </span>
                   </div>
                 </Link>
               </FadeIn>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="bg-charcoal text-ivory py-24 md:py-32 text-center border-t border-goldLight/20">
+        <div className="container mx-auto px-6 max-w-2xl">
+          <FadeIn>
+            <h2 className="font-display text-3xl md:text-5xl mb-6 leading-tight">
+              Would You like to Visit Ashram?
+            </h2>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-saffron text-white rounded-full px-8 py-3 text-sm uppercase tracking-wider font-medium hover:bg-saffron/90 transition-colors"
+            >
+              Enquire Now <ArrowRight size={16} />
+            </Link>
+          </FadeIn>
         </div>
       </section>
     </>

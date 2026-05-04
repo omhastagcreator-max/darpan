@@ -3,11 +3,11 @@ import Button from '@/components/Button'
 import LotusDivider from '@/components/LotusDivider'
 import Prose from '@/components/Prose'
 import CTASection from '@/components/CTASection'
-import { Award, Feather, Newspaper, Heart } from 'lucide-react'
+import { Award } from 'lucide-react'
 
 export const metadata = {
   title: 'Guruji Shri Nandkishore | Darpan Foundation',
-  description: 'Humanitarian, poet, writer, visionary and spiritual master. The story of Guruji Shri Nandkishore — founder of Darpan Foundation and Darpan Ashram.',
+  description: 'Guruji Nandkishore is a humanitarian leader, poet, writer, visionary and a spiritual master.',
 }
 
 export default function GurujiPage() {
@@ -25,26 +25,23 @@ export default function GurujiPage() {
         </div>
         <div className="relative z-10 container mx-auto px-6 lg:px-12">
           <FadeIn>
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-5 block">
-              The Founder
-            </span>
-            <h1 className="text-5xl md:text-7xl font-display text-ivory mb-5 leading-[1.05]">
+            <h1 className="text-5xl md:text-7xl font-display text-ivory mb-6 leading-[1.05]">
               Guruji Shri Nandkishore
             </h1>
-            <p className="text-xl text-goldLight tracking-wide font-light">
-              Humanitarian &middot; Poet &middot; Writer &middot; Visionary &middot; Spiritual Master
+            <p className="text-xl text-goldLight tracking-wide font-light max-w-3xl">
+              Guruji Nandkishore is a humanitarian leader, poet, writer, visionary and a spiritual master.
             </p>
           </FadeIn>
 
           <FadeIn delay={0.4} className="mt-12 flex flex-wrap gap-3">
             <a href="#early-life" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full border border-white/20 text-sm transition-all">
-              Early Life
+              Early Life ❯
             </a>
             <a href="#spiritual-life" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full border border-white/20 text-sm transition-all">
-              Spiritual Life
+              Spiritual Life ❯
             </a>
             <a href="#social-forums" className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-6 py-2 rounded-full border border-white/20 text-sm transition-all">
-              Social Forums
+              Social Forums ❯
             </a>
           </FadeIn>
         </div>
@@ -52,104 +49,75 @@ export default function GurujiPage() {
 
       {/* INTRO */}
       <section className="bg-ivory py-20 md:py-28">
-        <div className="container mx-auto px-6 lg:px-12 max-w-3xl text-center">
+        <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
               <p>
-                Guruji Shri Nandkishore is a humanitarian leader, poet, writer, visionary and spiritual master. His life&apos;s purpose is to cultivate empowered, transformed individuals who carry a deep understanding of the spiritual values that quietly hold humanity together.
+                Guruji Nandkishore is a humanitarian leader, poet, writer, visionary and a spiritual master.
               </p>
               <p>
-                He placed spiritual awakening at the very heart of his mission to uplift the world — and channels that mission through social initiatives led by people who have themselves been transformed.
+                Guruji&rsquo;s vision is to foster empowered and transformed individuals with deeper understanding of spiritual values which unite people. He made spiritual awakening as core value in his mission to transform humanity and has taken up social initiatives through transformed volunteers.
+              </p>
+              <p>
+                Proximity to a living Guru enables your journey to uncover your full potential starting from
               </p>
             </Prose>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-              {[
-                { title: 'Understanding', desc: 'Of yourself, others, and the nature of life.' },
-                { title: 'Experience', desc: 'Of states beyond what you have known.' },
-                { title: 'Attainment', desc: 'Of genuine inner peace and happiness.' },
-              ].map((step, i) => (
+            <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              {['Understanding', 'Experience', 'Attainment of inner peace and happiness.'].map((step, i) => (
                 <div key={i} className="bg-creamCard rounded-2xl p-7 border border-charcoal/5">
                   <div className="text-saffron font-display text-3xl mb-2">{`0${i + 1}`}</div>
-                  <h3 className="font-display text-xl mb-2">{step.title}</h3>
-                  <p className="text-charcoal/70 text-sm">{step.desc}</p>
+                  <h3 className="font-display text-xl text-charcoal">{step}</h3>
                 </div>
               ))}
             </div>
-            <p className="mt-10 text-charcoal/60 text-sm italic">
-              The three doors that proximity to a living Guru opens.
-            </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* CHAPTER 1 — EARLY LIFE */}
+      {/* EARLY LIFE */}
       <section id="early-life" className="py-24 md:py-32 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-3 block">
-              Chapter 01
-            </span>
             <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
-              Early life and the search for Reality.
+              Early Life
             </h2>
             <Prose>
               <p>
-                Guruji was born to Shrimati Kamala and Shri Brajlal Tiwari in the village of Durkhuru, Jhansi District, Uttar Pradesh. His first spiritual encounter arrived when he was barely two and a half years old.
+                Guruji was born to Shrimati Kamala and Shri Brajlal Tiwari at Durkhuru village in Jhansi District of Uttar Pradesh. He had his first spiritual experience at about two and half years of age.
               </p>
               <p>
-                Throughout school, he stood out as a naturally gifted learner. Even as a student, his hunger for genuine knowledge drove him deep into spiritual questioning. The search for Reality intensified during his adolescent years — he quietly practiced austerities and, in his youth, felt a compulsive pull toward the Himalayas. His formal education took him through Jhansi, Allahabad, Hyderabad and Delhi.
+                As a bright student, he showed a natural aptitude towards learning. His spiritual quest and interest in gaining real knowledge grew and, with that began his phase of wandering and learning &amp; unlearning. As search for Reality kept becoming intense, he secretly and spontaneously found himself practicing all kinds of austerities during his adolescence and running to Himalayas in his youth. He completed his school and university education during his stay at Jhansi, Allahabad, Hyderabad and Delhi.
               </p>
               <p>
-                He eventually chose journalism as his career and rose through the ranks from Resident Editor to Founder Editor to Editor-in-Chief — contributing to prominent English and Hindi publications across India. He interviewed distinguished figures from every sphere of life, produced hundreds of articles and lead stories, and in 2015 published a collection of his editorials titled <strong>&ldquo;Pahle 52 Saptaah&rdquo;</strong> covering the period 2014–2015.
+                He chose journalism as a profession and worked in various responsible editorial positions ranging from Resident Editor to Founder Editor, to Editor-in-Chief, in English and Hindi magazines and leading national newspapers. During his journalistic career he interviewed leading personalities spread across various fields, wrote many lead stories and hundreds of articles. The book &lsquo;Pahle 52 Saptaah&rsquo; which is collection of editorials written by him in 2014-2015 was released in the year 2015.
               </p>
             </Prose>
           </FadeIn>
         </div>
       </section>
 
-      {/* SIGNATURE QUOTE */}
-      <section className="bg-charcoal py-28 md:py-32 text-center border-y border-goldLight/20 relative">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <FadeIn>
-            <div className="text-goldLight mb-10">
-              <LotusDivider />
-            </div>
-            <p className="font-quote italic text-2xl md:text-4xl text-ivory leading-snug">
-              &ldquo;In real spirit we can value others only when we have discovered something pure and pious inside ourselves — that dazzles us and fills us with wonder and astonishment.&rdquo;
-            </p>
-            <p className="mt-10 text-goldLight tracking-[0.25em] uppercase text-xs font-medium">
-              — Guruji Shri Nandkishore
-            </p>
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* CHAPTER 2 — SPIRITUAL LIFE */}
+      {/* SPIRITUAL LIFE */}
       <section id="spiritual-life" className="py-24 md:py-32 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-3 block">
-              Chapter 02
-            </span>
             <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
-              Spiritual life and awakening.
+              Spiritual Life
             </h2>
             <Prose>
               <p>
-                Throughout the intensity of his journalistic career, spiritual experiences kept visiting Guruji&apos;s life — uninvited, insistent, undeniable. He came to understand that no external institution — religious, political or social — could truly transform a human being&apos;s inner world. Only spirituality held the real answer.
+                Spiritual experiences kept returning to Guruji&rsquo;s life during his busy career days and throughout his involvement in the activities of the NGO founded by him. He stressed the need for a transformation in the psyche of every human being and emphasised that such a transformation cannot be brought about by any external entity, be it religious, political, or social.
               </p>
               <p>
-                The moment Guruji encountered his own Guru, something in him became whole. A state of pure, timeless, spontaneous inner memory became fully clear to him. He made spiritual awakening the foundational value of his mission — channelling it through social initiatives led by people who had already undergone personal transformation.
+                Spirituality opened itself up as the solution to Guruji&rsquo;s existential enquiry. When Guruji met his Guru at that very moment, completeness happened. Pure, timeless, eternal and spontaneous memory became completely clear to him. He made spiritual awakening as core value in his mission to transform humanity and has taken up social initiatives through transformed volunteers.
               </p>
               <p>
-                In 2018, he established <strong>Darpan Foundation</strong> and <strong>Darpan Ashram</strong> in the foothills of Noorundumalai, Krishnagiri, Tamil Nadu — a quiet forest hamlet designed to make a replicable &ldquo;system of spiritual living&rdquo; accessible to anyone who wishes to pursue it. The Ashram is the home base for his two core spiritual systems: <strong>Sahaj Smriti Yog</strong> (the path of meditation and self-realisation) and <strong>Sahaj Smriti Kriya</strong> (also called Pindodak Kriya — devised by Guruji to align body and mind for meditation). Householders from diverse professions and countries across the world have found this system the most natural fit for their lives.
+                In 2018 Guruji established Darpan Foundation and Darpan Ashram in the foothills of Noorundumalai, Krishnagiri, Tamilnadu. Darpan Ashram is a small hamlet nestled in the lap of the picturesque forest valley overlooking Noorundumalai hills, a place styled to make amenable and replicable &lsquo;system of spiritual living&rsquo; to all willing human beings residing on earth. This is catalysed through Sahaj Smriti Yog System of self realisation along with the practice of Pindodak Kriya also known as Sahaj Smriti Kriya, devised by him. Householders from all across professions and nations find Sahaj Smriti Yog system of spiritual realisation most suitable to follow.
               </p>
               <p>
-                In 2018, Guruji was awarded the <strong>Acharya Chanakya Award</strong> in recognition of his spiritual contribution to humanity.
+                In 2018 Guruji was honoured with Acharya Chanakya Award for his Spiritual Contribution to the mankind.
               </p>
             </Prose>
 
-            {/* Award badge */}
             <div className="mt-12 inline-flex items-center gap-4 bg-creamCard border border-saffron/20 rounded-2xl p-5">
               <div className="w-12 h-12 rounded-full bg-saffron/10 flex items-center justify-center text-saffron">
                 <Award size={22} />
@@ -163,79 +131,60 @@ export default function GurujiPage() {
         </div>
       </section>
 
-      {/* CHAPTER 3 — SOCIAL FORUMS */}
-      <section id="social-forums" className="py-24 md:py-32 bg-creamCard">
-        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+      {/* SIGNATURE QUOTE */}
+      <section className="bg-charcoal py-28 md:py-32 text-center border-y border-goldLight/20">
+        <div className="container mx-auto px-6 max-w-4xl">
           <FadeIn>
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-3 block">
-              Chapter 03
-            </span>
-            <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
-              Reaching seekers, wherever they are.
-            </h2>
-            <div className="max-w-3xl">
-              <Prose>
-                <p>
-                  Beyond the ashram, Guruji reaches seekers wherever they are — at institutions, workplaces, residential societies, and wherever willing hearts call for him. He conducts interactive dialogues on spiritual and everyday topics, holding group meditation and Satsang every Sunday in Bengaluru.
-                </p>
-                <p>
-                  Under his guidance, Darpan Foundation operates across several domains: sustainable living, education, nature conservation, health, sanitation, and enabling senior citizens to contribute meaningfully to society.
-                </p>
-              </Prose>
+            <div className="text-goldLight mb-10">
+              <LotusDivider />
             </div>
-
-            {/* Roles */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12">
-              {[
-                { Icon: Newspaper, title: 'Spiritual Columnist', desc: 'For leading newspapers, magazines and weekly publications across India.' },
-                { Icon: Heart, title: 'Philosopher Member', desc: 'Ethics Committee at NIMHANS (National Institute of Mental Health and Neurosciences), 2018–2021.' },
-                { Icon: Feather, title: 'Author', desc: 'Pahle 52 Saptaah — a collection of editorials covering 2014–2015.' },
-              ].map((role, i) => (
-                <div key={i} className="bg-ivory rounded-2xl p-6 border border-charcoal/5">
-                  <div className="text-saffron mb-3">
-                    <role.Icon size={22} />
-                  </div>
-                  <h3 className="font-display text-lg mb-2">{role.title}</h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed">{role.desc}</p>
-                </div>
-              ))}
-            </div>
-          </FadeIn>
-
-          {/* Photo Gallery */}
-          <FadeIn>
-            <h3 className="font-display text-2xl md:text-3xl mt-20 mb-8">From the field.</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[
-                { caption: 'Walk-n-Run for rural education', img: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=1740&auto=format&fit=crop' },
-                { caption: 'Upanishad with Dr. CN Manjunath, Jaydeva Hospitals', img: 'https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?q=80&w=1740&auto=format&fit=crop' },
-                { caption: 'Dr. S. Prabhakar (IAS) at Darpan Ashram', img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1740&auto=format&fit=crop' },
-                { caption: 'Biranpalli Primary School, supported by Darpan', img: 'https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=1740&auto=format&fit=crop' },
-                { caption: 'Dr. Ajai Kumar Singh (Ex-DGP Karnataka)', img: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?q=80&w=1740&auto=format&fit=crop' },
-                { caption: 'Bhoomi Poojan Event at the ashram', img: 'https://images.unsplash.com/photo-1604608672804-b6acc585d6dc?q=80&w=1740&auto=format&fit=crop' },
-              ].map((photo, i) => (
-                <div key={i} className="group relative aspect-square rounded-2xl overflow-hidden">
-                  <img src={photo.img} alt={photo.caption} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 to-transparent opacity-90" />
-                  <p className="absolute bottom-4 left-4 right-4 text-ivory text-xs leading-snug font-medium">
-                    {photo.caption}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <p className="text-xs text-charcoal/50 mt-3 italic">{/* TODO: Replace with original Darpan Foundation photography. */}Placeholder photography. Awaiting original images from foundation archive.</p>
+            <p className="font-quote italic text-2xl md:text-4xl text-ivory leading-snug">
+              &ldquo;In real spirit we can value others only when, we have discovered something pure and pious inside ourselves, that dazzles us and fills us with wonder and astonishment.&rdquo;
+            </p>
+            <p className="mt-10 text-goldLight tracking-[0.25em] uppercase text-xs font-medium">
+              — Guruji Shri Nandkishore
+            </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* CTA */}
+      {/* SOCIAL FORUMS */}
+      <section id="social-forums" className="py-24 md:py-32 bg-creamCard">
+        <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
+              Social Forums
+            </h2>
+            <Prose>
+              <p>
+                Apart from initiating and guiding individual seekers in Sahaj Smriti Yog system of spiritual realisation, Guruji has taken one more initiative to reach out to seekers through conducting interactive dialogues with them at institutions, work places and residential complexes or any other random venue where willing hearts calls for him.
+              </p>
+              <p>
+                Under Guruji&rsquo;s guidance, Darpan Foundation works in the areas of sustainable living, education, conservation of nature, health, sanitation and enabling senior citizens to meaningfully contribute to society and touch lives of many people.
+              </p>
+            </Prose>
+
+            <ul className="mt-10 space-y-4">
+              {[
+                'Guruji writes spiritual columns in many leading newspapers, magazines and weekly publications',
+                'Guruji was appointed as Philosopher Member of Ethics Committee, NIMHANS (2018-2021)',
+                'Guruji has spoken as chief guest in numerous fora in the presence of august audience and dignitaries across professions.',
+                'He conducts group meditation and satsang every Sunday in Bengaluru.',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-4 text-charcoal/80 text-lg leading-relaxed">
+                  <span className="text-saffron font-display text-xl shrink-0 leading-none mt-1">{`0${i + 1}`}</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </FadeIn>
+        </div>
+      </section>
+
       <CTASection
-        title="Begin your own journey."
-        description="Explore the programs Guruji has created — pathways into clarity, meditation, service and self-discovery."
-        primaryHref="/programs"
-        primaryLabel="Explore Programs"
-        secondaryHref="/satsang"
-        secondaryLabel="Be in Satsang"
+        title="Sign Up for Self Transformation"
+        primaryHref="/contact"
+        primaryLabel="Enquire Now"
       />
     </>
   )

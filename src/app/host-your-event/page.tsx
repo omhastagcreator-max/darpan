@@ -2,44 +2,37 @@ import FadeIn from '@/components/FadeIn'
 import PageHero from '@/components/PageHero'
 import EnquiryForm from '@/components/EnquiryForm'
 import Prose from '@/components/Prose'
-import { School, GraduationCap, Briefcase, Users, Palette, Trees } from 'lucide-react'
 
 export const metadata = {
-  title: 'Host Your Event | Darpan Foundation',
+  title: 'Host your Event at Darpan Ashram | Darpan Foundation',
   description:
-    'Bring your group to Darpan Ashram. Schools, colleges, corporates, residential communities, artists, and sustainable-living workshops are all welcome.',
+    'We can work with you to host your event at ashram. You could plan any event, personal celebrations of your life, or any official events.',
 }
 
 const groups = [
   {
-    Icon: School,
-    title: 'Schools',
-    desc: 'A day trip for nature walks, farm activities and a tour of the village. Or our "Life Touching Life" program for children.',
+    title: 'School',
+    desc: 'Schools can have a day trip to ashram for a nature walk and understand various interdependencies in nature. Students can take part in farm activities and understand the science behind it. A tour of village will give them different perspective about life. They can plan to attend our "Life Touching Life" Program',
   },
   {
-    Icon: GraduationCap,
-    title: 'Colleges & institutes',
-    desc: 'Bring social work into your curriculum. Attend programs on personal excellence. Our "Teenage — A World of Opportunities" is built for this stage.',
+    title: 'Colleges and Educational Institutes',
+    desc: 'Colleges and Educational Institutes can include social work into their curriculum. Contribute towards any social cause. Any other field event can be planned at ashram. Students can attend our programs on personal excellence. Our program, "Teenage – A world of opportunities" designed for teenagers and youth focuses on various aspects of this phase of life.',
   },
   {
-    Icon: Briefcase,
-    title: 'Corporates & start-ups',
-    desc: 'Re-learn the power of the individual. Declutter the mind. Understand team dynamics. Expand vision. Heighten excellence. Rejuvenate.',
+    title: 'Corporates and Start ups',
+    desc: 'The Ashram location and ambience are ideal for corporates and start-up companies to: Re-learn the power of the individual, Declutter their minds, Understand team dynamics, Expand their vision, Heighten their excellence, Rejuvenate themselves',
   },
   {
-    Icon: Users,
-    title: 'Residential communities',
-    desc: 'Group events and meaningful celebrations — birthdays, anniversaries — collective contribution adds depth to life events.',
+    title: 'Residential Communities',
+    desc: 'Group events and meaningful celebrations such as birthdays, anniversaries etc. can be planned at the ashram. Collective contributions and community participation brings added meaning to life events.',
   },
   {
-    Icon: Palette,
-    title: 'Creative minds',
-    desc: 'Artists, musicians, writers — stay at the ashram to enhance creativity in quiet, beautiful surroundings.',
+    title: 'Creative Minds',
+    desc: 'Artists, Musicians, Writers etc. can stay at the ashram to enhance their creativity in the quiet, beautiful natural surroundings.',
   },
   {
-    Icon: Trees,
-    title: 'Sustainable-living workshops',
-    desc: 'Eco-friendly construction, renewable energy, sustainable living — workshops conducted on the ashram grounds.',
+    title: 'Workshops on Sustainable Living',
+    desc: 'Workshops on Eco-friendly construction, renewable energy, sustainable living etc. are conducted at the ashram.',
   },
 ]
 
@@ -47,9 +40,8 @@ export default function HostEventPage() {
   return (
     <>
       <PageHero
-        eyebrow="Bring Your Group"
-        title="Host your event at the ashram."
-        subtitle="Personal celebrations or official events. Darpan Ashram offers a unique experience and an unforgettable ambience for what matters."
+        eyebrow="Host your Event"
+        title="Host your Event at Darpan Ashram"
         variant="light"
         height="short"
       />
@@ -59,10 +51,13 @@ export default function HostEventPage() {
           <FadeIn>
             <Prose size="lg">
               <p>
-                We can work with you to host your event at the ashram. You could plan any kind of gathering — personal celebrations of your life, or official events for your organisation.
+                We can work with you to host your event at ashram. You could plan any event, personal celebrations of your life, or any official events.
               </p>
               <p>
-                Darpan Ashram is a perfect place to come together with the people who matter to you. Write to us with details about your group and the anticipated duration of the program.
+                Darpan ashram is a perfect place to get together with people who are part of your life. Ashram gives you a unique experience and ambience to make your event special and memorable.
+              </p>
+              <p>
+                Please write to us with details about the group, anticipated duration of program.
               </p>
             </Prose>
           </FadeIn>
@@ -71,24 +66,18 @@ export default function HostEventPage() {
 
       {/* GROUP TYPES */}
       <section className="py-20 md:py-28 bg-creamCard">
-        <div className="container mx-auto px-6 lg:px-12">
-          <FadeIn className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
-              Who Comes Here
-            </span>
+        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+          <FadeIn className="text-center mb-14">
             <h2 className="font-display text-3xl md:text-5xl leading-tight">
-              Six kinds of group, all welcome.
+              Who can host events
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {groups.map((g, i) => (
               <FadeIn key={i} delay={i * 0.06}>
                 <div className="bg-ivory rounded-2xl p-7 border border-charcoal/5 h-full">
-                  <div className="text-saffron mb-4">
-                    <g.Icon size={26} strokeWidth={1.4} />
-                  </div>
-                  <h3 className="font-display text-xl text-charcoal mb-2">{g.title}</h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed">{g.desc}</p>
+                  <h3 className="font-display text-2xl text-charcoal mb-3">{g.title}</h3>
+                  <p className="text-charcoal/75 text-sm leading-relaxed">{g.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -99,16 +88,13 @@ export default function HostEventPage() {
       <section className="bg-ivory py-20 md:py-28">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl mb-5 leading-tight">
-              Sign up for hosting your event.
+            <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">
+              Sign Up for Hosting Your Event
             </h2>
-            <p className="text-charcoal/70 text-lg">
-              Tell us a little about your group and what you have in mind.
-            </p>
           </FadeIn>
           <FadeIn>
             <EnquiryForm
-              buttonLabel="Send Event Enquiry"
+              buttonLabel="Host Your Event"
               showProgramField
               programName="Group Event"
               showCityField

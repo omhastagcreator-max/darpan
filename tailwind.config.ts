@@ -9,22 +9,32 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        saffron: '#C47D2B',
-        forest: '#2D4A3E',
-        ivory: '#F5F0E8',
-        charcoal: '#1A1A1A',
-        goldLight: '#E8C87A',
-        creamCard: '#FAF6EE',
+        // Darpan brand palette — derived from the logo (navy + teal + cyan).
+        // Token names are kept stable so existing JSX still works.
+        saffron: '#2EB5B5',     // Primary teal — was saffron
+        forest: '#0E2A47',      // Deep navy — was forest
+        ivory: '#FFFFFF',       // Page background — was warm ivory
+        charcoal: '#0E2A47',    // Body text uses brand navy
+        goldLight: '#5BC4C4',   // Accent on dark surfaces — was gold
+        creamCard: '#F2F8FA',   // Card surface — pale cool blue
+        // Aliases for clarity in new code
+        darpanNavy: '#0E2A47',
+        darpanTeal: '#2EB5B5',
+        darpanCyan: '#5BC4C4',
+        darpanPale: '#F2F8FA',
+        darpanInk: '#1A2B3D',
       },
       fontFamily: {
-        sans: ['var(--font-dm-sans)', 'sans-serif'],
-        display: ['var(--font-cormorant)', 'serif'],
+        // Brand requested: Poppins everywhere.
+        sans: ['var(--font-poppins)', 'sans-serif'],
+        display: ['var(--font-poppins)', 'serif'],
         sanskrit: ['var(--font-noto-serif-devanagari)', 'serif'],
-        quote: ['var(--font-playfair)', 'serif'],
+        quote: ['var(--font-poppins)', 'serif'],
       },
       animation: {
         'fade-in-up': 'fadeInUp 0.4s ease-out forwards',
         'fade-in': 'fadeIn 0.3s ease-out forwards',
+        'shimmer': 'shimmer 8s ease-in-out infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -43,9 +53,21 @@ const config: Config = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
+        shimmer: {
+          '0%, 100%': { opacity: '0.3' },
+          '50%': { opacity: '0.6' },
+        },
       },
       backgroundImage: {
-        'noise': 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")',
+        'noise':
+          'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")',
+        // Brand gradient — top of every page hero
+        'darpan-gradient':
+          'linear-gradient(135deg, #0E2A47 0%, #194B73 35%, #2A8A99 70%, #2EB5B5 100%)',
+        'darpan-gradient-soft':
+          'linear-gradient(180deg, #F2F8FA 0%, #FFFFFF 100%)',
+        'darpan-mandala':
+          'radial-gradient(circle at top left, rgba(94,196,196,0.18) 0px, transparent 220px), radial-gradient(circle at top right, rgba(14,42,71,0.12) 0px, transparent 220px)',
       },
     },
   },

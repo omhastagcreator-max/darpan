@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { YoutubeIcon, InstagramIcon, FacebookIcon, TwitterIcon } from './SocialIcons'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -10,9 +11,9 @@ export default function Footer() {
           {/* Column 1: About */}
           <div>
             <Link href="/" className="inline-block mb-6">
-              <h3 className="text-white font-display text-2xl tracking-[0.2em]">DARPAN</h3>
+              <Logo variant="light" />
             </Link>
-            <p className="font-quote italic text-lg mb-6 text-goldLight">
+            <p className="text-base mb-6 text-darpanCyan italic">
               A mirror for every seeker of truth.
             </p>
             <div className="space-y-3 text-sm text-ivory/60">

@@ -2,44 +2,75 @@ import FadeIn from '@/components/FadeIn'
 import PageHero from '@/components/PageHero'
 import Prose from '@/components/Prose'
 import EnquiryForm from '@/components/EnquiryForm'
-import { Sprout, MapPin, Trees, Utensils, Stethoscope, Heart } from 'lucide-react'
 
 export const metadata = {
   title: 'Kshetra Darpan | Darpan Foundation',
-  description:
-    'Pure food for the body. Sustainable farming, environmental conservation, and a movement to restore purity to what reaches our plates.',
+  description: 'Pure Food for Body. Sustainable farming and environmental conservation.',
 }
 
 const activities = [
   {
-    Icon: Sprout,
-    title: 'Each One, Reach One',
-    desc: 'A UNIFOHD initiative bridging city families with farmers. Raising urban environmental awareness, empowering farmers with sustainable practice, and reducing migration to cities by making natural farming economically viable.',
+    name: 'Each One, Reach One',
+    cta: 'Join Hands with Us',
+    body: [
+      'Each One, Reach One is an initiative by our parent organisation, Universal Forum for Human Dignity (UNIFOHD), dedicated to bridging the gap between consumers and the source of their food.',
+      'Our goal is to raise basic environmental awareness among urban residents, like making them aware of naturally grown food and empowering farmers to adopt sustainable farming practices. By connecting city-dwelling families with farmers who cultivate natural food by following eco-friendly agriculture techniques, we not only promote healthier choices but also support the financial stability of farming communities. This should encourage more farmers to take up sustainable farming practices thereby reducing their migration to cities.',
+      'Additionally, there is also the opportunity to connect with the farmers&rsquo; families of rural India, thus fostering a direct connection with them.',
+    ],
   },
   {
-    Icon: MapPin,
-    title: 'Sponsor a Field',
-    desc: 'Choose your vegetables. Take part in the full farming cycle. Provide employment to local farmers. Children learn soil and water conservation. Sponsors receive complimentary natural grains and pulses.',
+    name: 'Sponsor a Field',
+    cta: 'Be a Sponsor',
+    body: [
+      'This is an enriching journey where the aim is to bring together like-minded individuals, especially those who have environmental awareness, to practice conserving and nurturing nature by growing their own food using sustainable farming practices.',
+      'Sustainable and natural farming is all about bringing back life to our soil.',
+      'Through this initiative, you get to:',
+    ],
+    bullets: [
+      'Grow your choice of vegetables',
+      'Be part of the whole farming cycle from sowing to harvesting',
+      'Provide employment to local farmers and empower them to shift to natural farming',
+      'Enjoy farm visits with family',
+    ],
+    closing:
+      'This will be a wonderful way for your children to learn about soil &amp; water conservation, sustainable agriculture methods which will enrich them in many ways. Sponsors are free to visit the fields and engage in hands-on activities like sowing, weeding and harvesting. As a token of gratitude, complimentary packages of grains and pulses cultivated in these fields will also be provided.',
   },
   {
-    Icon: Trees,
-    title: 'Trees & rainwater',
-    desc: 'A 2.4 million-litre rainwater harvesting pond. Over 2,000 trees on the ashram. Tree-plantation drives extended to village roads, schools and hospitals. School students participate in conservation activity.',
+    name: 'Tree Planting and Rainwater Harvesting',
+    cta: 'Get Involved',
+    body: [
+      'Rainwater harvesting and tree planting are crucial steps to enhance the Earth&rsquo;s green cover, restore soil health and effectively manage natural resources.',
+      'At Darpan Ashram, we strive to cultivate environmental awareness in children and nurture the next generation of ecologically conscious citizens. Students from nearby schools regularly visit our ashram, actively engaging in various activities as part of their learning process.',
+      'Our ashram features a rainwater harvesting pond with a capacity of 2.4 million liters, designed to conserve precious water resources.',
+      'With over 2000 trees encompassing a diverse range of flowers, fruits and other varieties, Darpan Ashram serves as a sanctuary for nature. Additionally, we have undertaken tree plantation initiatives along village roads, schools, hospitals and other areas, ensuring a greener and healthier environment for all.',
+    ],
   },
   {
-    Icon: Utensils,
-    title: 'Annadanam',
-    desc: 'Food offering — to volunteers, staff, and visitors engaged in shram-daan. Mark birthdays, anniversaries and meaningful days by sponsoring a meal. In-kind donations of rice, cereals, spices and vegetables welcomed.',
+    name: 'Annadanam',
+    cta: 'Sponsor a Meal',
+    body: [
+      'At the ashram, dedicated volunteers, staff and visitors who participate in shram-daan have committed their lives to various spiritual and social initiatives undertaken by Darpan.',
+      'As a gesture of gratitude, Annadanam (food offering) is provided to these shramiks, as well as to guests and visitors.',
+      'You can make special occasions in your life, like birthdays, anniversaries or any chosen day, an opportunity to offer Annadanam at the ashram.',
+      'Another meaningful way to contribute to Annadanam is through in-kind donations. You may choose to donate rice, cereals, spices, fresh vegetables and more.',
+    ],
   },
   {
-    Icon: Stethoscope,
-    title: 'Health camps',
-    desc: 'In collaboration with UNIFOHD — health awareness and check-up programs for labourers in unorganised sectors and rural communities with limited access to care.',
+    name: 'Health Camps',
+    cta: 'Get Involved',
+    body: [
+      'Darpan collaborates with our parent organisation UNIFOHD to raise health awareness and promote well-being among laborers in unorganised sectors and individuals in rural India with limited access to healthcare facilities.',
+      'We conduct regular check-ups addressing a wide range of health concerns, such as diabetes, blood pressure and general well-being.',
+    ],
   },
   {
-    Icon: Heart,
-    title: 'Goshala',
-    desc: 'Indigenous cows are integral to the ashram and to its natural farming model. Plans are underway to build a dedicated Goshala — a sheltered, nurturing environment. Donations are welcomed.',
+    name: 'Goshala',
+    cta: 'Donate for Goshala',
+    body: [
+      'Cows are an integral part of Darpan Ashram, contributing immensely to maintaining soil health. We follow cow-based natural farming methods, harnessing their significance in fostering environmental well-being as well as human and soil health.',
+      'The indigenous cows at Darpan Ashram are known for their friendliness and affectionate nature. Caring for them brings great fulfillment and joy.',
+      'To provide them with a dedicated shelter and offer them a safe and nurturing environment, Darpan Ashram has plans to build a Goshala.',
+    ],
   },
 ]
 
@@ -47,9 +78,8 @@ export default function KshetraPage() {
   return (
     <>
       <PageHero
-        eyebrow="Kshetra Darpan क्षेत्र"
-        title="Heal the earth, heal yourself."
-        subtitle="Pure food for the body. The creation of sustainable environments and spaces on Earth that nurture and sustain life."
+        eyebrow="Kshetra Darpan"
+        title="Pure Food for Body"
         bgImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1740&auto=format&fit=crop"
       />
 
@@ -58,65 +88,80 @@ export default function KshetraPage() {
           <FadeIn>
             <Prose size="lg">
               <p>
-                Guruji consistently emphasises the importance of environmental awareness. Connection with nature, he teaches, is fundamental to physical health and personal fulfilment. All living beings need food to survive — and Sahaj Smriti Yog&apos;s understanding of <em>pure food</em> makes this truth relevant at every level.
+                Guruji consistently emphasises the importance of having environmental awareness and says that by staying connected with nature, one can maintain good health and achieve fulfillment. It is universally true that all living beings, without exception, require food for survival. This is where Sahaj Smriti Yog&rsquo;s spiritual description of pure food becomes relevant to every living being on our planet.
               </p>
               <p>
-                <strong>Kshetra</strong> is a concept that transcends easy definition. Just as the human body serves as a Kshetra — a living field for trillions of microbes in the gut — so the Earth serves as the Kshetra for all other life forms. It sustains the elaborate web of ecosystems that support all physical existence.
+                In his teachings, Guruji describes Kshetra as a concept that transcends definition. Just as the human body serves as the Kshetra, providing a conducive environment for trillions of microbes in our gut, enabling us to exist as our true selves, the Earth serves as the Kshetra for all other life forms and their interconnected ecosystems, supporting the well-being of our physical bodies.
               </p>
               <p>
-                Kshetra Darpan is the movement born from this understanding: the creation of sustainable environments and spaces on Earth that nurture and sustain life. It explores eco-friendly techniques that respect nature&apos;s intricate relationships — and incorporates the cultural traditions and dietary practices of local communities.
+                By Kshetra, we mean the creation of such sustainable environments and spaces on Earth that nurture and sustain life through optimal conditions and surroundings. This vision is the essence of the Kshetra Darpan movement, which seeks to explore sustainable practices and eco-friendly techniques that respect Nature&rsquo;s intricate relationship with flora &amp; fauna, traditional crop patterns, mineral composition of the soil and the diverse tapestry of life. It also incorporates the cultural aspects of communities, their dietary habits and their harmonious coexistence.
               </p>
             </Prose>
           </FadeIn>
         </div>
       </section>
 
-      {/* CHALLENGE */}
       <section className="bg-forest text-ivory py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
-            <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
-              The Core Challenge
-            </span>
             <h2 className="font-display text-3xl md:text-5xl mb-8 leading-tight">
-              Contemporary agriculture has become unsustainable.
+              Empowering Farmers with Sustainable Farming Practices
             </h2>
             <Prose size="md" className="text-ivory/85">
               <p>
-                A comprehensive rethink is urgently needed — one that places the health of people, soil and the environment at its centre.
+                Our current agricultural processes are unsustainable and demand a comprehensive reevaluation to prioritise the well-being of people, soil and the overall environment. We need sustainable agriculture methods that are not only cost-effective but also minimise climate impact while simultaneously yielding multiple benefits. We must adopt practices that raise income, foster inclusivity and safeguard biodiversity.
               </p>
               <p>
-                Darpan&apos;s model advocates for natural farming: cost-effective, climate-conscious, and capable of delivering multiple benefits at once — better incomes, greater inclusion, and the protection of biodiversity.
-              </p>
-              <p>
-                The natural and sustainable farming movement at Darpan cultivates chemical-free grains, pulses, fruits and vegetables — restoring purity to what reaches our plates.
+                Darpan&rsquo;s natural and sustainable farming practices spearhead an initiative and movement aimed at restoring purity in our food production. By cultivating chemical-free grains, pulses, fruits and vegetables using eco-friendly farming techniques, we strive to bring back the essence of wholesome nutrition.
               </p>
             </Prose>
           </FadeIn>
         </div>
       </section>
 
-      {/* SIX ACTIVITIES */}
+      {/* SIX ACTIVITIES (verbatim) */}
       <section className="py-24 md:py-32 bg-creamCard">
-        <div className="container mx-auto px-6 lg:px-12">
-          <FadeIn className="text-center max-w-2xl mx-auto mb-16">
+        <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
+          <FadeIn className="text-center mb-16">
             <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
-              Six Activities
+              Kshetra Darpan Activities
             </span>
             <h2 className="font-display text-3xl md:text-5xl leading-tight">
-              How the work happens.
+              Six ongoing activities
             </h2>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-8">
             {activities.map((a, i) => (
               <FadeIn key={i} delay={i * 0.05}>
-                <div className="bg-ivory rounded-2xl p-7 border border-charcoal/5 h-full">
-                  <div className="text-saffron mb-4">
-                    <a.Icon size={26} strokeWidth={1.4} />
+                <div className="bg-ivory rounded-2xl p-8 md:p-10 border border-charcoal/5">
+                  <div className="flex items-start justify-between flex-wrap gap-4 mb-5">
+                    <div>
+                      <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium block mb-2">
+                        {`Activity 0${i + 1}`}
+                      </span>
+                      <h3 className="font-display text-2xl md:text-3xl text-charcoal">{a.name}</h3>
+                    </div>
+                    <span className="bg-saffron/10 text-saffron px-4 py-2 rounded-full text-xs uppercase tracking-widest font-medium">
+                      {a.cta}
+                    </span>
                   </div>
-                  <h3 className="font-display text-xl text-charcoal mb-3">{a.title}</h3>
-                  <p className="text-charcoal/70 text-sm leading-relaxed">{a.desc}</p>
+                  <div className="space-y-4 text-charcoal/80 leading-relaxed">
+                    {a.body.map((p, j) => (
+                      <p key={j} dangerouslySetInnerHTML={{ __html: p }} />
+                    ))}
+                    {a.bullets && (
+                      <ul className="space-y-2 pl-2">
+                        {a.bullets.map((b, j) => (
+                          <li key={j} className="flex items-start gap-2 text-sm">
+                            <span className="text-saffron mt-1.5 shrink-0">●</span>
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {a.closing && <p dangerouslySetInnerHTML={{ __html: a.closing }} />}
+                  </div>
                 </div>
               </FadeIn>
             ))}
@@ -127,13 +172,12 @@ export default function KshetraPage() {
       <section className="bg-ivory py-24 md:py-32">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl mb-5 leading-tight">
-              Want to participate?
+            <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">
+              Want to participate in Kshetra Darpan activities?
             </h2>
-            <p className="text-charcoal/70 text-lg">Tell us how you&apos;d like to be involved.</p>
           </FadeIn>
           <FadeIn>
-            <EnquiryForm programName="Kshetra Darpan" showProgramField showCityField />
+            <EnquiryForm programName="Kshetra Darpan" showProgramField showCityField buttonLabel="Enquire Now" />
           </FadeIn>
         </div>
       </section>

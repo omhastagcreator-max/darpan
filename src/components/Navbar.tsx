@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ChevronDown } from 'lucide-react'
+import Logo from './Logo'
 
 const programsList = [
   { name: 'Ignite Self', href: '/ignite-self', desc: 'Channel your inner fire' },
@@ -64,8 +65,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
-        <Link href="/" className={`font-display text-2xl font-bold tracking-[0.2em] ${linkColor}`}>
-          DARPAN
+        <Link href="/" aria-label="Darpan Foundation home" className="shrink-0">
+          <Logo variant={solid ? 'dark' : 'light'} />
         </Link>
 
         {/* Desktop Nav */}
@@ -150,7 +151,7 @@ function NavLink({ href, label, linkColor }: { href: string; label: string; link
   return (
     <Link
       href={href}
-      className={`text-sm font-medium tracking-wide uppercase hover:text-saffron transition-colors ${linkColor}`}
+      className={`text-[13px] font-medium tracking-wider uppercase hover:text-darpanTeal transition-colors ${linkColor}`}
     >
       {label}
     </Link>

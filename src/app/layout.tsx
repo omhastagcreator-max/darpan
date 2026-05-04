@@ -1,19 +1,14 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, DM_Sans, Noto_Serif_Devanagari, Playfair_Display } from 'next/font/google'
+import { Poppins, Noto_Serif_Devanagari } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const cormorant = Cormorant_Garamond({
+const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-cormorant',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-dm-sans',
+  weight: ['200', '300', '400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
+  display: 'swap',
 })
 
 const notoSerifDevanagari = Noto_Serif_Devanagari({
@@ -22,16 +17,10 @@ const notoSerifDevanagari = Noto_Serif_Devanagari({
   variable: '--font-noto-serif-devanagari',
 })
 
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  style: ['italic'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-playfair',
-})
-
 export const metadata: Metadata = {
-  title: 'Darpan Foundation | A mirror for every seeker of truth',
-  description: 'A place built entirely for individual transformation. A mirror for every seeker of truth.',
+  title: 'Darpan Foundation — A mirror for every seeker of truth',
+  description:
+    'Darpan Foundation. Spiritual transformation through Sahaj Smriti Yog, Ashram life, and social initiatives in education, nature, skill and senior care.',
 }
 
 export default function RootLayout({
@@ -40,9 +29,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${dmSans.variable} ${notoSerifDevanagari.variable} ${playfair.variable} scroll-smooth`}>
-      <body className="relative bg-ivory text-charcoal flex flex-col min-h-screen">
-        <div className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.03] mix-blend-overlay bg-noise"></div>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${notoSerifDevanagari.variable} scroll-smooth`}
+    >
+      <body className="relative bg-ivory text-charcoal flex flex-col min-h-screen font-sans">
+        <div className="pointer-events-none fixed inset-0 z-50 h-full w-full opacity-[0.025] mix-blend-overlay bg-noise"></div>
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
