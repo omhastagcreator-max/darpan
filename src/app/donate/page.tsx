@@ -1,6 +1,7 @@
 import FadeIn from '@/components/FadeIn'
 import PageHero from '@/components/PageHero'
 import Button from '@/components/Button'
+import DonateButton from '@/components/DonateButton'
 import { Heart, Sprout, BookOpen, Hammer, Users, Repeat, Building, Milk } from 'lucide-react'
 
 export const metadata = {
@@ -52,11 +53,6 @@ const causes = [
 ]
 
 export default function DonatePage() {
-  function handleDonate() {
-    // TODO: integrate Razorpay (or Cashfree / Stripe) here.
-    alert('Payment gateway integration is pending. Please use the bank details below for now.')
-  }
-
   return (
     <>
       <PageHero
@@ -93,12 +89,7 @@ export default function DonatePage() {
                   </div>
                   <h3 className="font-display text-lg text-charcoal mb-2">{c.name}</h3>
                   <p className="text-charcoal/70 text-sm leading-relaxed mb-5 flex-1" dangerouslySetInnerHTML={{ __html: c.desc }} />
-                  <button
-                    onClick={handleDonate}
-                    className="bg-saffron text-white rounded-full px-5 py-2 text-xs uppercase tracking-widest font-medium hover:bg-saffron/90 transition-colors self-start"
-                  >
-                    Donate
-                  </button>
+                  <DonateButton label="Donate" />
                 </div>
               </FadeIn>
             ))}
