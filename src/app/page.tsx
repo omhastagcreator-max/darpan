@@ -162,7 +162,7 @@ export default function Home() {
               </div>
               {/* Decorative ring */}
               <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-2 border-darpanTeal/30 -z-10 animate-spin-slower" />
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-darpanTeal/15 -z-10 animate-pulse-soft" />
+              <div className="absolute -bottom-4 -left-4 w-20 h-20 rounded-full bg-darpanTeal/20 -z-10 animate-pulse-soft" />
             </Parallax>
 
             <div className="lg:col-span-7">
@@ -258,7 +258,7 @@ export default function Home() {
             ].map((p, i) => (
               <FadeIn key={i} delay={i * 0.06}>
                 <Tilt3DCard className="h-full" intensity={6}>
-                  <div className="h-full bg-white rounded-2xl p-6 border border-darpanNavy/8 hover:border-darpanTeal/40 hover:shadow-xl hover:shadow-darpanTeal/15 transition-all">
+                  <div className="h-full bg-white rounded-2xl p-6 border border-darpanNavy/10 hover:border-darpanTeal/40 hover:shadow-xl hover:shadow-darpanTeal/20 transition-all">
                     <div className="w-12 h-12 rounded-xl brand-gradient flex items-center justify-center text-white mb-4">
                       <p.Icon size={22} strokeWidth={1.6} />
                     </div>
@@ -302,7 +302,7 @@ export default function Home() {
             {programs.map((p, i) => (
               <FadeIn key={p.href} delay={i * 0.03} className="w-[270px] md:w-[300px] shrink-0">
                 <Tilt3DCard intensity={10}>
-                  <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/8 hover:shadow-2xl hover:shadow-darpanTeal/20 transition-all h-full">
+                  <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/10 hover:shadow-2xl hover:shadow-darpanTeal/20 transition-all h-full">
                     <div className="aspect-[4/3] overflow-hidden relative">
                       <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                       <div className="absolute inset-0 bg-gradient-to-t from-darpanNavy/50 via-transparent to-transparent" />
@@ -391,10 +391,10 @@ export default function Home() {
         {/* Marquee row */}
         <Marquee duration={45} className="text-ivory">
           {testimonials.map((t, i) => (
-            <div key={i} className="w-[340px] md:w-[420px] shrink-0 bg-white border border-darpanNavy/8 rounded-2xl p-6 hover:shadow-xl hover:shadow-darpanTeal/10 transition-all">
+            <div key={i} className="w-[340px] md:w-[420px] shrink-0 bg-white border border-darpanNavy/10 rounded-2xl p-6 hover:shadow-xl hover:shadow-darpanTeal/10 transition-all">
               <Quote className="text-darpanTeal/50 mb-3" size={24} />
               <p className="text-darpanInk/85 text-[14px] leading-relaxed mb-5">{t.quote}</p>
-              <div className="flex items-center gap-3 pt-4 border-t border-darpanNavy/8">
+              <div className="flex items-center gap-3 pt-4 border-t border-darpanNavy/10">
                 <div className="w-9 h-9 rounded-full brand-gradient flex items-center justify-center text-white text-sm font-semibold">
                   {t.name.charAt(0)}
                 </div>
@@ -490,7 +490,7 @@ export default function Home() {
                 type="email"
                 placeholder="your@email.com"
                 required
-                className="flex-1 bg-white border border-darpanNavy/15 rounded-full px-5 py-3 text-[15px] text-darpanNavy placeholder:text-darpanInk/40 focus:outline-none focus:border-darpanTeal transition-colors"
+                className="flex-1 bg-white border border-darpanNavy/20 rounded-full px-5 py-3 text-[15px] text-darpanNavy placeholder:text-darpanInk/40 focus:outline-none focus:border-darpanTeal transition-colors"
               />
               <button
                 type="submit"

@@ -69,7 +69,7 @@ export default function EnquiryForm({
         <textarea
           name="message"
           rows={5}
-          className="w-full bg-white border border-charcoal/15 rounded-xl px-4 py-3 text-base text-charcoal focus:outline-none focus:border-saffron transition-colors"
+          className="w-full bg-white border border-charcoal/20 rounded-xl px-4 py-3 text-base text-charcoal focus:outline-none focus:border-saffron transition-colors"
           placeholder="Share what brings you here…"
           required
         />
@@ -109,7 +109,7 @@ function Field({
         name={name}
         required={required}
         defaultValue={defaultValue}
-        className="w-full bg-white border border-charcoal/15 rounded-xl px-4 py-3 text-base text-charcoal focus:outline-none focus:border-saffron transition-colors"
+        className="w-full bg-white border border-charcoal/20 rounded-xl px-4 py-3 text-base text-charcoal focus:outline-none focus:border-saffron transition-colors"
       />
     </div>
   )

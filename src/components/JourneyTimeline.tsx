@@ -53,7 +53,7 @@ export default function JourneyTimeline({
 
                     {/* Content card */}
                     <div className={`md:w-[calc(50%-3rem)] pl-20 md:pl-0 ${isEven ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}>
-                      <div className={`p-6 rounded-2xl ${isDark ? 'bg-white/5 border border-white/10' : 'bg-darpanPale border border-darpanNavy/8'}`}>
+                      <div className={`p-6 rounded-2xl ${isDark ? 'bg-white/5 border border-white/10' : 'bg-darpanPale border border-darpanNavy/10'}`}>
                         <h3 className="font-display text-xl mb-2">{step.title}</h3>
                         <p className={`text-sm leading-relaxed ${isDark ? 'text-ivory/75' : 'text-darpanInk/75'}`}>
                           {step.desc}

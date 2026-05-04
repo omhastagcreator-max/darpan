@@ -121,8 +121,8 @@ html.lenis, html.lenis body {
 
 /* Card hover surface (subtle inner stroke + lift) */
 .card-surface {
-  @apply bg-white border border-darpanNavy/8 transition-all duration-300;
+  @apply bg-white border border-darpanNavy/10 transition-all duration-300;
 }
 .card-surface:hover {
-  @apply border-darpanTeal/40 shadow-2xl shadow-darpanTeal/15 -translate-y-1;
+  @apply border-darpanTeal/40 shadow-2xl shadow-darpanTeal/20 -translate-y-1;
 }

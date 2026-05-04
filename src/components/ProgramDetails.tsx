@@ -32,7 +32,7 @@ export default function ProgramDetails(props: DetailsProps) {
             <Heart size={14} /> Program at a glance
           </div>
         </div>
-        <div className="divide-y divide-darpanNavy/8">
+        <div className="divide-y divide-darpanNavy/10">
           {rows.map((r, i) => (
             <div key={i} className="flex items-start gap-5 px-7 py-5">
               <div className="text-darpanTeal shrink-0 pt-0.5">

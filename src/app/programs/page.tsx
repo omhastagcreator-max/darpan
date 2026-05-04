@@ -135,7 +135,7 @@ export default function ProgramsIndex() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {featured.map((p, i) => (
               <FadeIn key={p.href} delay={i * 0.08}>
-                <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/8 hover:shadow-2xl hover:shadow-darpanTeal/15 hover:-translate-y-2 transition-all h-full">
+                <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/10 hover:shadow-2xl hover:shadow-darpanTeal/20 hover:-translate-y-2 transition-all h-full">
                   <div className="aspect-[16/10] overflow-hidden relative">
                     <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                     <div className="absolute inset-0 bg-gradient-to-t from-darpanNavy/60 to-transparent" />
@@ -171,7 +171,7 @@ export default function ProgramsIndex() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {community.map((p, i) => (
               <FadeIn key={p.href} delay={i * 0.06}>
-                <Link href={p.href} className="group flex bg-darpanPale rounded-2xl overflow-hidden border border-darpanNavy/8 hover:shadow-xl transition-all hover:-translate-y-1 h-full">
+                <Link href={p.href} className="group flex bg-darpanPale rounded-2xl overflow-hidden border border-darpanNavy/10 hover:shadow-xl transition-all hover:-translate-y-1 h-full">
                   <div className="w-48 shrink-0 hidden sm:block overflow-hidden">
                     <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>
@@ -204,7 +204,7 @@ export default function ProgramsIndex() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {experiences.map((p, i) => (
               <FadeIn key={p.href} delay={i * 0.08}>
-                <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/8 hover:shadow-xl transition-all hover:-translate-y-1 h-full">
+                <Link href={p.href} className="group block bg-white rounded-2xl overflow-hidden border border-darpanNavy/10 hover:shadow-xl transition-all hover:-translate-y-1 h-full">
                   <div className="aspect-[4/3] overflow-hidden relative">
                     <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   </div>

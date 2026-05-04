@@ -259,7 +259,7 @@ export default function IgniteSelfPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
             {modules.map((m, i) => (
               <FadeIn key={i} delay={i * 0.08}>
-                <div className="bg-white border border-darpanNavy/8 rounded-2xl p-8 h-full hover:shadow-lg hover:shadow-darpanTeal/10 transition-all">
+                <div className="bg-white border border-darpanNavy/10 rounded-2xl p-8 h-full hover:shadow-lg hover:shadow-darpanTeal/10 transition-all">
                   <div className="flex items-start justify-between mb-5">
                     <div>
                       <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold block mb-2">
@@ -339,7 +339,7 @@ export default function IgniteSelfPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
             {formats.map((f, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="bg-white border border-darpanNavy/8 rounded-2xl overflow-hidden h-full flex flex-col hover:shadow-2xl hover:shadow-darpanTeal/15 hover:-translate-y-1 transition-all">
+                <div className="bg-white border border-darpanNavy/10 rounded-2xl overflow-hidden h-full flex flex-col hover:shadow-2xl hover:shadow-darpanTeal/20 hover:-translate-y-1 transition-all">
                   {/* Color header */}
                   <div className={`bg-gradient-to-br ${f.color} p-7 text-white`}>
                     <f.Icon size={28} strokeWidth={1.6} className="mb-4 opacity-90" />
@@ -375,7 +375,7 @@ export default function IgniteSelfPage() {
                       ))}
                     </ul>
 
-                    <div className="bg-darpanPale rounded-xl p-4 text-sm border border-darpanTeal/15">
+                    <div className="bg-darpanPale rounded-xl p-4 text-sm border border-darpanTeal/20">
                       <p className="text-[10px] uppercase tracking-widest text-darpanTeal font-semibold mb-1">
                         Best for
                       </p>

@@ -163,7 +163,7 @@ export default function YogPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {touchstones.map((t, i) => (
               <FadeIn key={i} delay={i * 0.1}>
-                <div className="bg-darpanPale rounded-2xl p-8 h-full border border-darpanNavy/8 text-center hover:shadow-lg transition-all">
+                <div className="bg-darpanPale rounded-2xl p-8 h-full border border-darpanNavy/10 text-center hover:shadow-lg transition-all">
                   <div className="w-16 h-16 mx-auto rounded-2xl brand-gradient flex items-center justify-center text-white mb-5">
                     <t.Icon size={26} strokeWidth={1.6} />
                   </div>
@@ -197,7 +197,7 @@ export default function YogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {dailyBenefits.map((b, i) => (
               <FadeIn key={i} delay={i * 0.08}>
-                <div className="bg-white border border-darpanNavy/8 rounded-2xl p-7 h-full hover:shadow-lg transition-shadow">
+                <div className="bg-white border border-darpanNavy/10 rounded-2xl p-7 h-full hover:shadow-lg transition-shadow">
                   <CheckCircle2 className="text-darpanTeal mb-4" size={22} />
                   <h3 className="font-display text-xl text-darpanNavy mb-3 font-semibold">{b.title}</h3>
                   <p className="text-darpanInk/75 text-sm leading-relaxed">{b.desc}</p>
