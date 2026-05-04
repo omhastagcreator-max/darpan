@@ -27,7 +27,7 @@ export default function UpanishadPage() {
         bgImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -49,7 +49,7 @@ export default function UpanishadPage() {
       </section>
 
       {/* QUOTE */}
-      <section className="bg-charcoal py-24 md:py-32 text-center border-y border-goldLight/20">
+      <section className="bg-charcoal py-16 md:py-24 text-center border-y border-goldLight/20">
         <div className="container mx-auto px-6 max-w-3xl">
           <FadeIn>
             <div className="text-goldLight mb-8">
@@ -63,7 +63,7 @@ export default function UpanishadPage() {
       </section>
 
       {/* VIDEOS */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl leading-tight">
@@ -91,7 +91,7 @@ export default function UpanishadPage() {
         </div>
       </section>
 
-      <section className="bg-ivory py-24 md:py-32">
+      <section className="bg-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">

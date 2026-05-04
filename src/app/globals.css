@@ -92,3 +92,37 @@ html.lenis, html.lenis body {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* 3D perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.perspective-1500 {
+  perspective: 1500px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Conic gradient halo used by orbs */
+.conic-halo {
+  background: conic-gradient(from 0deg, #2EB5B5, #5BC4C4, #194B73, #0E2A47, #2EB5B5);
+  filter: blur(40px);
+  opacity: 0.45;
+}
+
+/* Glow text — used on hero accent words */
+.glow-teal {
+  text-shadow: 0 0 30px rgba(94, 196, 196, 0.5);
+}
+
+/* Card hover surface (subtle inner stroke + lift) */
+.card-surface {
+  @apply bg-white border border-darpanNavy/8 transition-all duration-300;
+}
+.card-surface:hover {
+  @apply border-darpanTeal/40 shadow-2xl shadow-darpanTeal/15 -translate-y-1;
+}

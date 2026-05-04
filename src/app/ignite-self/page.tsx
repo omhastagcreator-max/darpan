@@ -197,7 +197,7 @@ export default function IgniteSelfPage() {
       />
 
       {/* PROMISE + DETAILS SIDEBAR */}
-      <section className="py-20 md:py-28 bg-ivory">
+      <section className="py-14 md:py-20 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
             <div className="lg:col-span-7">
@@ -245,7 +245,7 @@ export default function IgniteSelfPage() {
       </section>
 
       {/* CURRICULUM */}
-      <section className="py-24 md:py-32 bg-darpanPale">
+      <section className="py-16 md:py-24 bg-darpanPale">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold mb-4 block">
@@ -294,7 +294,7 @@ export default function IgniteSelfPage() {
       />
 
       {/* BENEFITS */}
-      <section className="bg-darpanNavy text-ivory py-24 md:py-32 mandala-bg">
+      <section className="bg-darpanNavy text-ivory py-16 md:py-24 mandala-bg">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl text-center">
           <FadeIn>
             <div className="text-darpanCyan mb-8">
@@ -322,7 +322,7 @@ export default function IgniteSelfPage() {
       </section>
 
       {/* FORMATS — DECISION HELP */}
-      <section id="formats" className="py-24 md:py-32 bg-ivory">
+      <section id="formats" className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold mb-4 block">
@@ -401,7 +401,7 @@ export default function IgniteSelfPage() {
       <FAQ items={faqs} />
 
       {/* REGISTER */}
-      <section id="register" className="bg-darpanNavy text-ivory py-24 md:py-32">
+      <section id="register" className="bg-darpanNavy text-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <div className="text-darpanCyan mb-8">

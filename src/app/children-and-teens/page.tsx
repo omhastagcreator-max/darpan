@@ -43,7 +43,7 @@ export default function ChildrenTeensPage() {
       />
 
       {/* CHILDREN */}
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <Prose size="lg">
@@ -75,7 +75,7 @@ export default function ChildrenTeensPage() {
       </section>
 
       {/* TEENS */}
-      <section className="py-24 md:py-32 bg-charcoal text-ivory">
+      <section className="py-16 md:py-24 bg-charcoal text-ivory">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-4xl mx-auto">
             <FadeIn>
@@ -116,7 +116,7 @@ export default function ChildrenTeensPage() {
         </div>
       </section>
 
-      <section className="bg-creamCard py-24 md:py-32">
+      <section className="bg-creamCard py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">

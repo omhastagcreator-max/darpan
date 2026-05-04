@@ -83,7 +83,7 @@ export default function KshetraPage() {
         bgImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -101,7 +101,7 @@ export default function KshetraPage() {
         </div>
       </section>
 
-      <section className="bg-forest text-ivory py-24 md:py-32">
+      <section className="bg-forest text-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-5xl mb-8 leading-tight">
@@ -120,7 +120,7 @@ export default function KshetraPage() {
       </section>
 
       {/* SIX ACTIVITIES (verbatim) */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-16">
             <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -169,7 +169,7 @@ export default function KshetraPage() {
         </div>
       </section>
 
-      <section className="bg-ivory py-24 md:py-32">
+      <section className="bg-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">

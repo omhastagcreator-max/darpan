@@ -58,7 +58,7 @@ export default function VisionPage() {
         bgImage="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -86,7 +86,7 @@ export default function VisionPage() {
       </section>
 
       {/* FOOD FOR TRANSFORMATION */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn className="text-center mb-12">
             <div className="text-saffron mb-6">
@@ -111,7 +111,7 @@ export default function VisionPage() {
       </section>
 
       {/* 4-STEP JOURNEY (verbatim bullets) */}
-      <section className="bg-forest text-ivory py-24 md:py-32">
+      <section className="bg-forest text-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">

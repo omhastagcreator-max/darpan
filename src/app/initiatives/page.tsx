@@ -58,7 +58,7 @@ export default function InitiativesIndex() {
         bgImage="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-20 md:py-28 bg-ivory">
+      <section className="py-14 md:py-20 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl text-center">
           <FadeIn>
             <p className="text-charcoal/80 text-lg leading-relaxed mb-6">

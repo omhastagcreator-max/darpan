@@ -51,7 +51,7 @@ export default function BlogPage() {
         height="short"
       />
 
-      <section className="py-20 md:py-28 bg-ivory">
+      <section className="py-14 md:py-20 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post, i) => (

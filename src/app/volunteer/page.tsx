@@ -33,7 +33,7 @@ export default function VolunteerPage() {
         height="short"
       />
 
-      <section className="py-20 md:py-28 bg-ivory">
+      <section className="py-14 md:py-20 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -54,7 +54,7 @@ export default function VolunteerPage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-creamCard">
+      <section className="py-14 md:py-20 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl leading-tight">Activities</h2>
@@ -85,7 +85,7 @@ export default function VolunteerPage() {
         </div>
       </section>
 
-      <section className="bg-ivory py-20 md:py-28">
+      <section className="bg-ivory py-14 md:py-20">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">

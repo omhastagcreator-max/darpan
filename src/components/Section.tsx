@@ -3,33 +3,35 @@ import { ReactNode } from 'react'
 interface SectionProps {
   children: ReactNode
   className?: string
-  bg?: 'ivory' | 'cream' | 'forest' | 'charcoal' | 'white'
-  padding?: 'none' | 'sm' | 'md' | 'lg' | 'xl'
+  bg?: 'ivory' | 'cream' | 'forest' | 'charcoal' | 'white' | 'gradient'
+  padding?: 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   id?: string
   containerClassName?: string
 }
 
 const bgMap = {
-  ivory: 'bg-ivory text-charcoal',
-  cream: 'bg-creamCard text-charcoal',
-  forest: 'bg-forest text-ivory',
-  charcoal: 'bg-charcoal text-ivory',
-  white: 'bg-white text-charcoal',
+  ivory: 'bg-ivory text-darpanInk',
+  cream: 'bg-darpanPale text-darpanInk',
+  forest: 'bg-darpanNavy text-ivory',
+  charcoal: 'bg-darpanNavy text-ivory',
+  white: 'bg-white text-darpanInk',
+  gradient: 'brand-gradient text-ivory',
 }
 
 const paddingMap = {
   none: 'py-0',
-  sm: 'py-12 md:py-16',
-  md: 'py-20 md:py-24',
-  lg: 'py-24 md:py-32',
-  xl: 'py-32 md:py-40',
+  xs: 'py-8 md:py-10',
+  sm: 'py-10 md:py-14',
+  md: 'py-14 md:py-20',     // tightened
+  lg: 'py-16 md:py-24',     // tightened (was py-24/32)
+  xl: 'py-20 md:py-28',     // tightened (was py-32/40)
 }
 
 export default function Section({
   children,
   className = '',
   bg = 'ivory',
-  padding = 'lg',
+  padding = 'md',
   id,
   containerClassName = '',
 }: SectionProps) {

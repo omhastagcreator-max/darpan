@@ -48,7 +48,7 @@ export default function GurujiPage() {
       </section>
 
       {/* INTRO */}
-      <section className="bg-ivory py-20 md:py-28">
+      <section className="bg-ivory py-14 md:py-20">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -75,7 +75,7 @@ export default function GurujiPage() {
       </section>
 
       {/* EARLY LIFE */}
-      <section id="early-life" className="py-24 md:py-32 bg-creamCard">
+      <section id="early-life" className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
@@ -97,7 +97,7 @@ export default function GurujiPage() {
       </section>
 
       {/* SPIRITUAL LIFE */}
-      <section id="spiritual-life" className="py-24 md:py-32 bg-ivory">
+      <section id="spiritual-life" className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">
@@ -149,7 +149,7 @@ export default function GurujiPage() {
       </section>
 
       {/* SOCIAL FORUMS */}
-      <section id="social-forums" className="py-24 md:py-32 bg-creamCard">
+      <section id="social-forums" className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <h2 className="text-4xl md:text-5xl font-display text-charcoal mb-10 leading-tight">

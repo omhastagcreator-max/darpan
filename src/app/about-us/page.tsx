@@ -20,7 +20,7 @@ export default function AboutPage() {
         bgImage="https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2070&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -42,7 +42,7 @@ export default function AboutPage() {
       </section>
 
       {/* TWO FEATURE CARDS */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {[

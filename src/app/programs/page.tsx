@@ -122,7 +122,7 @@ export default function ProgramsIndex() {
       </section>
 
       {/* FEATURED — THE THREE FOUNDATIONAL PROGRAMS */}
-      <section className="py-20 md:py-28 bg-darpanPale">
+      <section className="py-14 md:py-20 bg-darpanPale">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="mb-12">
             <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold mb-3 block">
@@ -158,7 +158,7 @@ export default function ProgramsIndex() {
       </section>
 
       {/* COMMUNITY PRACTICES */}
-      <section className="py-20 md:py-28 bg-ivory">
+      <section className="py-14 md:py-20 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="mb-12">
             <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold mb-3 block">
@@ -191,7 +191,7 @@ export default function ProgramsIndex() {
       </section>
 
       {/* EXPERIENCES */}
-      <section className="py-20 md:py-28 bg-darpanPale">
+      <section className="py-14 md:py-20 bg-darpanPale">
         <div className="container mx-auto px-6 lg:px-12">
           <FadeIn className="mb-12">
             <span className="text-darpanTeal uppercase tracking-[0.3em] text-xs font-semibold mb-3 block">

@@ -55,7 +55,7 @@ export default function DarpanAshramPage() {
         bgImage="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?q=80&w=2070&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -75,7 +75,7 @@ export default function DarpanAshramPage() {
       </section>
 
       {/* POLICIES */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -99,7 +99,7 @@ export default function DarpanAshramPage() {
       </section>
 
       {/* DAILY SCHEDULE */}
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -130,7 +130,7 @@ export default function DarpanAshramPage() {
       </section>
 
       {/* FACILITIES */}
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
             <span className="text-saffron uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -154,7 +154,7 @@ export default function DarpanAshramPage() {
       </section>
 
       {/* HOW TO REACH */}
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl leading-tight">How to Reach</h2>

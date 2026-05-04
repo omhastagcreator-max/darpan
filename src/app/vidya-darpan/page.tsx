@@ -80,7 +80,7 @@ export default function VidyaPage() {
         bgImage="https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -102,7 +102,7 @@ export default function VidyaPage() {
       </section>
 
       {/* MENTOR A MILLION */}
-      <section className="bg-charcoal text-ivory py-24 md:py-32">
+      <section className="bg-charcoal text-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -169,7 +169,7 @@ export default function VidyaPage() {
       </section>
 
       {/* THREE ACTIVITIES */}
-      <section className="bg-forest text-ivory py-24 md:py-32">
+      <section className="bg-forest text-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
             <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -203,7 +203,7 @@ export default function VidyaPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-ivory text-center">
+      <section className="py-16 md:py-24 bg-ivory text-center">
         <div className="container mx-auto px-6 max-w-2xl">
           <FadeIn>
             <h2 className="font-display text-3xl md:text-5xl text-charcoal mb-6 leading-tight">
@@ -218,7 +218,7 @@ export default function VidyaPage() {
         </div>
       </section>
 
-      <section className="bg-creamCard py-24 md:py-32">
+      <section className="bg-creamCard py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">

@@ -29,7 +29,7 @@ export default function KaushalPage() {
         bgImage="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1740&auto=format&fit=crop"
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-16 md:py-24 bg-ivory">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn>
             <Prose size="lg">
@@ -44,7 +44,7 @@ export default function KaushalPage() {
         </div>
       </section>
 
-      <section className="bg-charcoal text-ivory py-24 md:py-32 border-y border-goldLight/20">
+      <section className="bg-charcoal text-ivory py-16 md:py-24 border-y border-goldLight/20">
         <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
           <FadeIn>
             <span className="text-goldLight uppercase tracking-[0.3em] text-xs font-medium mb-4 block">
@@ -65,7 +65,7 @@ export default function KaushalPage() {
         </div>
       </section>
 
-      <section className="py-24 md:py-32 bg-creamCard">
+      <section className="py-16 md:py-24 bg-creamCard">
         <div className="container mx-auto px-6 lg:px-12 max-w-5xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl leading-tight">
@@ -85,7 +85,7 @@ export default function KaushalPage() {
         </div>
       </section>
 
-      <section className="bg-ivory py-24 md:py-32">
+      <section className="bg-ivory py-16 md:py-24">
         <div className="container mx-auto px-6 lg:px-12 max-w-3xl">
           <FadeIn className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl mb-3 leading-tight">
